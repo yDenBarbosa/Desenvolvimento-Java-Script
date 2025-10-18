@@ -10,3 +10,10 @@ console.log(idades[2])
 console.table(idades)
 
 let mercado = [ "Arroz", 20, "Melancia", true]
+
+let cores = ["vermelho", "branco", "verde"]
+console.table(cores)
+console.log(cores)
+
+let numeros = [1, 4, 5]
+console.log(numeros[0]+numeros[1])
