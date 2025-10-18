@@ -7,3 +7,5 @@ let alunos = {
 console.log(alunos)
 console.log(alunos.nome)
 console.log(alunos.idade)
+console.log(alunos.nome, alunos.idade)
+console.log(`O aluno ${alunos.nome} tem ${alunos.idade} anos`)
