@@ -26,5 +26,10 @@ console.log(`Promoção aplicada: ${valorCompra > 100 && clienteFrequente == tru
 let temConvite = false
 let estaNaLista = true
 let entrada = temConvite == true || estaNaLista == true
-
 console.log(`Entrada permitida: ${entrada}`)
+
+let vip = true
+let compra1 = 347
+let desc = vip == true || compra1 > 500
+console.log(`Desconto aplicado: ${desc}`)
+
