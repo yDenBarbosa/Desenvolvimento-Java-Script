@@ -30,3 +30,18 @@ titulo3.innerText = "Troquei 3"
 titulo4.innerText = "Troquei 4"
 titulo5.innerText = "Troquei 5"
 titulo6.innerText = "Troquei 6"
+
+let paragrafo2 = document.getElementsByClassName('paragrafo2')
+
+console.log(paragrafo2[0])
+
+titulo1.style.color = "red"
+titulo1.style.fontSize = "100px"
+titulo1.style.backgroundColor = "green"
+
+
+let titulo = document.getElementById('titulo_principal')
+
+titulo.style.color = "blue"
+titulo.style.fontSize = "32px"
+titulo.style.backgroundColor = "black"
