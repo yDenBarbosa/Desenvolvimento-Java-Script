@@ -135,3 +135,23 @@ const baixarArquivo1 = new Promise((resolve, reject)=>{
         
     })
 })
+
+
+
+// 
+
+let nome 
+
+function darNome(callback) {
+    setTimeout(()=>{
+        nome = "Barbosa"
+        callback()
+    }, 2000)
+}
+
+function mostrarNome(){
+    console.log(nome);
+}
+
+darNome(mostrarNome)
+
