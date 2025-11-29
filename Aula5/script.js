@@ -48,54 +48,90 @@
 // verificarResultado(sucesso, erro)
 
 
-function baixarArquivo(callback) {
-    console.log("Baixando arquivo...");
+// function baixarArquivo(callback) {
+//     console.log("Baixando arquivo...");
     
-    setTimeout(() => {
-        console.log("Download concluido!");
-        callback()
-    }, 4000)
-}
+//     setTimeout(() => {
+//         console.log("Download concluido!");
+//         callback()
+//     }, 4000)
+// }
 
-function abrirArquivo() {
-    console.log("Abrindo arquivo...");
-}
+// function abrirArquivo() {
+//     console.log("Abrindo arquivo...");
+// }
 
-baixarArquivo(abrirArquivo)
+// baixarArquivo(abrirArquivo)
 
-let pizzaChegou = true
+// let pizzaChegou = true
 
-const pedido = new Promise((resolve, reject)=>{
-    if(pizzaChegou == true){
-        resolve("A pizza chegou")
-    } else {
-        reject("Pedido cancelado")
-    }
-})
+// const pedido = new Promise((resolve, reject)=>{
+//     if(pizzaChegou == true){
+//         resolve("A pizza chegou")
+//     } else {
+//         reject("Pedido cancelado")
+//     }
+// })
 
-pedido
-    .then(()=>{
-        console.log("Deu bom")
-    })
-    .catch(()=>{
-        console.log("Deu ruim")
-    })
+// pedido
+//     .then(()=>{
+//         console.log("Deu bom")
+//     })
+//     .catch(()=>{
+//         console.log("Deu ruim")
+//     })
 
 
-const verificarResultado = new Promise((resolve, reject)=>{
-    let result = 1 + 1
+// const verificarResultado = new Promise((resolve, reject)=>{
+//     let result = 1 + 1
 
-    if (result == 2 ) {
-        resolve("Uhuuuuul! Número 2")
-    }else {
-        reject("XIII, não é 2")
-    }
-})
+//     if (result == 2 ) {
+//         resolve("Uhuuuuul! Número 2")
+//     }else {
+//         reject("XIII, não é 2")
+//     }
+// })
 
-verificarResultado
-    .then(()=>{
+// verificarResultado
+//     .then((res)=>{
+//         console.log(res);
+//     })
+//     .catch((err)=>{
+//         console.log()
+//     })
 
-    })
-    .catch(()=>{
+// const buscarUsuario = new Promise((resolve, reject)=>{
+//     console.log("Buscando usuário no banco de dados...");
+
+//     setTimeout(()=>{
+
+//         let encontrado = true
+
+//         if(encontrado == true){
+//             resolve({nome: "Matheus", idade: 20, profissao: "Programador"})
+//         }else{
+//             reject("Usuário não encontrado")
+//         }
         
+//     }, 2000)
+
+// })
+
+// buscarUsuario
+//     .then((res)=>{
+//         console.log(res)
+//         console.log(`Nome do usuario: ${res.nome}`)
+//         console.log(`Idade do usuario: ${res.idade}`)
+//         console.log(`Profissao: ${res.profissao}`)
+//     })
+//     .catch(()=>{
+//         console.log(err)
+//     })
+
+const baixarArquivo1 = new Promise((resolve, reject)=>{
+    console.log("Inciando download...");
+    
+    setTimeout(()=>{
+
     })
+})
