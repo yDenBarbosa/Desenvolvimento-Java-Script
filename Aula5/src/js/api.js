@@ -24,8 +24,16 @@
 //         cidade.innerText = data[0].address.city
 //     })
 
+const nome = document.getElementById("nome")
+const especie = document.getElementById("especie")
+const status1 = document.getElementById("status")
+const localizacao = document.getElementById("localizacao")
+
 fetch("https://rickandmortyapi.com/api/character")
     .then((res) => res.json())
     .then((data) => {
-        console.log(data.results[0])
+        nome.innerText = data[0].result.name
+        especie.innerText = data[0].result.species
+        status1.innerText = data[0].result.status
+        localizacao.innerText = data[0].location.name
     })
